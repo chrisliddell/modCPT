@@ -1,0 +1,5 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <extension_attributes for ="Magento\Customer\Api\Data\AddressInterface">
+       <attribute code="canton" type="string"/>
+    </extension_attributes>
+</config>

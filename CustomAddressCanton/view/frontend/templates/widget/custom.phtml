@@ -1,0 +1,16 @@
+<?php /**@var \Imagineer\CustomAddressCanton\Block\Customer\Widget\Custom $block */?>
+<div class="field canton<?php if ($block->isRequired()) echo ' required'; ?>">
+    <label class="label" for="<?php echo $block->escapetHtml($block->getFieldLabel()); ?>">
+        <span><?php echo $block->escapeHtml($block->getFieldLabel()); ?></span>
+    </label>
+    <div class="control">
+        <input type="text"
+                id="<?php echo $block->escapeHtml($block->getFieldId()); ?>"
+                name="<?php echo $block->escapeHtml($block->getFieldName()); ?>"
+                value="<?php echo $block->escapeHtml($block->getValue()); ?>"
+                title="<?php echo $block->escapeHtml($block->getFieldLabel()); ?>"
+                class="input-text"
+                <?php /* @escapeNotVerified */ echo $block->getFieldParams() ?>
+                <?php if ($block->isRequired()) echo ' data-validate="{required:true}"' ?> />
+    </div>
+</div>
